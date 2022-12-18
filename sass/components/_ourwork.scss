@@ -1,0 +1,27 @@
+.images {
+  display: flex;
+  margin-right: -30px;
+
+  & > .images__item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-right: var(--margin-content);
+  }
+}
+
+.img-box {
+  position: relative;
+
+  .img-box__label {
+    position: absolute;
+    bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 100%;
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-text-title-button);
+    background: rgba(47, 48, 58, 0.8);
+  }
+}

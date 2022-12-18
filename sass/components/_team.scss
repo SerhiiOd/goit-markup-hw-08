@@ -1,0 +1,82 @@
+.glava-job-title {
+  background-color: var(--background-color-sect-button);
+}
+
+.badge {
+  display: flex;
+  margin-top: -30px;
+  margin-right: -30px;
+
+  .badge__card {
+    background-color: var(--color-text-title-button);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  & > .badge__card {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-top: var(--margin-content);
+    margin-right: var(--margin-content);
+  }
+}
+
+.people__name {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+  margin-top: var(--margin-content);
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+}
+
+.people__jobtitle {
+  color: var(--color-text-p);
+  text-align: center;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+
+  .social-list__item:not(:first-child) {
+    margin-left: 10px;
+  }
+
+  .social-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .social-list__icon {
+    fill: #afb1b8;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .social-list__link:hover,
+  .social-list__link:focus {
+    background-color: var(--hover-focus-link-button);
+  }
+
+  .social-list__link:hover svg,
+  .social-list__link:focus svg {
+    fill: #ffffff;
+  }
+}
