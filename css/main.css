@@ -123,8 +123,8 @@
 .hero-overlay .hero-overlay__text {
   color: var(--color-text-title-button);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636363636;
+  font-size: 26px;
+  line-height: 1.6153846154;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
@@ -139,7 +139,7 @@
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  padding: 10px 32px;
+  padding: 10px 24px;
   border-radius: 4px;
   border: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -153,25 +153,17 @@
   padding-bottom: 0;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+@media screen and (min-width: 768px) {
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-right: -30px;
+  }
 }
 
-.about {
-  display: flex;
-  margin-right: -30px;
-}
-.about .about__chapter {
+.about__chapter {
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
@@ -179,11 +171,18 @@
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.about .about__description {
+
+.about__description {
   font-size: 14px;
   color: var(--color-text-p);
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .about__description {
+    margin-bottom: 0;
+  }
 }
 
 .about__icon {
@@ -196,9 +195,10 @@
   border-radius: 4px;
 }
 
-.about > .about__item {
-  flex-basis: calc(25% - 30px);
-  margin-right: var(--margin-content);
+@media screen and (min-width: 768px) {
+  .about__item {
+    width: calc(50% - 30px);
+  }
 }
 
 .images {
@@ -231,11 +231,6 @@
   background-color: var(--background-color-sect-button);
 }
 
-.badge {
-  display: flex;
-  margin-top: -30px;
-  margin-right: -30px;
-}
 .badge .badge__card {
   background-color: var(--color-text-title-button);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -244,7 +239,6 @@
 .badge > .badge__card {
   flex-basis: calc(25% - 30px);
   margin-top: var(--margin-content);
-  margin-right: var(--margin-content);
 }
 
 .people__name {
@@ -302,10 +296,11 @@
 
 .client {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .client .client__item {
-  width: calc(100% - 25px);
+  flex-basis: calc((100% - 30px) / 2);
   height: 92px;
   cursor: pointer;
 }
@@ -841,6 +836,8 @@ ul {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 textarea {
@@ -849,23 +846,52 @@ textarea {
 
 /* Розмітка */
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .glava {
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 1.1785714286;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 :root {
