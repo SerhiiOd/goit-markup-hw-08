@@ -3,56 +3,107 @@
   margin-left: auto;
   padding: 60px 0;
   background: var(--background-color-sect);
+
+  // text-align: center;
 }
 
 .foot-flex {
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
+  // display: flex;
+  // justify-content: space-around;
+  // align-items: baseline;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 .flogo {
   display: block;
 
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
   .flogo__link {
     font-family: 'Raleway', sans-serif;
     color: var(--color-text-logo);
     font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 / 26);
+    // font-size: 26px;
+    // line-height: calc(31 / 26);
+    font-size: 24px;
+    line-height: calc(28 / 24);
     letter-spacing: 0.03em;
-
     display: block;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
+    margin-bottom: 28px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      line-height: calc(31 / 26);
+      margin-bottom: 20px;
+    }
   }
 
   .flogo__style {
     color: var(--text-color-logo-foot);
-    line-height: calc(31 / 26);
+    // line-height: calc(31 / 26);
+    line-height: calc(28 / 24);
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+      line-height: calc(31 / 26);
+      letter-spacing: 0.03em;
+    }
   }
 }
 
 .comunity {
   font-style: normal;
 
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+
   .comunity__street {
     color: var(--text-color-logo-foot);
+    // font-size: 14px;
+    // line-height: calc(24 / 14);
     font-size: 14px;
-    line-height: calc(24 / 14);
+    line-height: calc(16 / 14);
     letter-spacing: 0.03em;
 
-    margin-bottom: 9px;
+    // margin-bottom: 9px;
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
+
   .comunity__mail {
-    margin-bottom: 9px;
+    // margin-bottom: 9px;
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
 }
 
 .comunity__link {
   color: var(--color-text-contact);
+  // font-size: 14px;
+  // line-height: calc(24 / 14);
   font-size: 14px;
-  line-height: calc(24 / 14);
+  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -64,10 +115,21 @@
 }
 
 .join-box {
-  height: 80px;
-  width: auto;
-  margin-left: 70px;
+  // height: 80px;
+  // width: auto;
+  // margin-left: 70px;
   display: block;
+
+  @media screen and (min-width: 1200px) {
+    height: 80px;
+    width: auto;
+    margin-left: 70px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
 
   .join-box__chapter {
     font-weight: 700;
@@ -109,11 +171,31 @@
   }
 }
 
+.subscribe-box {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: end;
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+
 .subscribe {
   height: 86px;
   width: auto;
-  margin-left: 93px;
+  // margin-left: 93px;
   display: block;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
   .subscribe__text {
     margin-bottom: 20px;
@@ -127,7 +209,8 @@
 }
 
 .subscribe__input {
-  width: 358px;
+  // width: 358px;
+  // width: 450px;
   height: 50px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -137,6 +220,19 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 
   &::placeholder {
     font-size: 16px;
@@ -159,11 +255,15 @@
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   padding: 10px 28px;
-  margin-left: 12px;
+  // margin-left: 12px;
   border-radius: 4px;
   border: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 
   &:hover,
   &:focus {

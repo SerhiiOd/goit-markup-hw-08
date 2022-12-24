@@ -1,13 +1,34 @@
 .client {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
+  justify-content: space-between;
+
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
 
   .client__item {
     // width: calc(100% - 150px / 6);
-    flex-basis: calc((100% - 30px) / 2);
     height: 92px;
     cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client__item {
+    width: calc(100% - 150px / 6);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .client__item {
+    flex-basis: calc((100% / 3) - 30px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .client__item {
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 
