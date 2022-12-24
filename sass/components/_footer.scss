@@ -48,7 +48,6 @@
     @media screen and (min-width: 1200px) {
       font-size: 26px;
       line-height: calc(31 / 26);
-      margin-bottom: 20px;
     }
   }
 
@@ -83,9 +82,9 @@
     // margin-bottom: 9px;
     margin-bottom: 12px;
 
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 9px;
-    }
+    // @media screen and (min-width: 1200px) {
+    //   margin-bottom: 9px;
+    // }
   }
 
   .comunity__mail {
@@ -213,6 +212,7 @@
   // width: 450px;
   height: 50px;
   padding-top: 15px;
+  padding-right: 16px;
   padding-bottom: 15px;
   padding-left: 16px;
   color: var(--color-text-title-button);

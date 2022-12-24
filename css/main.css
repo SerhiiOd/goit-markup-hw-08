@@ -295,7 +295,7 @@
   line-height: 1.1875;
   letter-spacing: 0.03em;
   margin-right: auto;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   margin-left: auto;
 }
 
@@ -474,7 +474,6 @@
   .flogo .flogo__link {
     font-size: 26px;
     line-height: 1.1923076923;
-    margin-bottom: 20px;
   }
 }
 .flogo .flogo__style {
@@ -503,11 +502,6 @@
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
-}
-@media screen and (min-width: 1200px) {
-  .comunity .comunity__street {
-    margin-bottom: 9px;
-  }
 }
 .comunity .comunity__mail {
   margin-bottom: 12px;
@@ -621,6 +615,7 @@
 .subscribe__input {
   height: 50px;
   padding-top: 15px;
+  padding-right: 16px;
   padding-bottom: 15px;
   padding-left: 16px;
   color: var(--color-text-title-button);
