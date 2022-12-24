@@ -29,27 +29,27 @@
     padding: 200px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../../images/desktop/overlay.jpg');
+  }
 
-    @include retina {
+      @include retina {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url('../../images/desktop/overlay-2x.jpg');
     }
-  }
+}
 
-  .hero-overlay__text {
-    color: var(--color-text-title-button);
-    font-weight: 900;
-    font-size: 26px;
-    line-height: calc(42 / 26);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    text-align: center;
+.hero-overlay__text {
+  color: var(--color-text-title-button);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: calc(42 / 26);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  text-align: center;
 
-    @media screen and (min-width: 1200px) {
-      font-size: 44px;
-      line-height: calc(60 / 44);
-    }
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: calc(60 / 44);
   }
 }
 
