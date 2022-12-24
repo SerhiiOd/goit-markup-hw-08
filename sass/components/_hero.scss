@@ -2,13 +2,39 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  padding: 200px 0;
+  padding: 118px 0;
   text-align: center;
   background-color: #c4c4c4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/overlay.jpg');
+    url('../../images/mobile/overlay-mob.jpg');
   background-position: center;
   background-size: cover;
+
+  @include retina {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../../images/mobile/overlay-mob-2x.jpg');
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../../images/tablet/overlay-tab.jpg');
+
+    @include retina {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../../images/tablet/overlay-tab-2x.jpg');
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../../images/desktop/overlay.jpg');
+
+    @include retina {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../../images/desktop/overlay-2x.jpg');
+    }
+  }
 
   .hero-overlay__text {
     color: var(--color-text-title-button);
@@ -19,14 +45,11 @@
     text-transform: uppercase;
     margin-bottom: 30px;
     text-align: center;
-    // color: var(--color-text-title-button);
-    // font-weight: 900;
-    // font-size: 44px;
-    // line-height: calc(60 / 44);
-    // letter-spacing: 0.06em;
-    // text-transform: uppercase;
-    // margin-bottom: 30px;
-    // text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: calc(60 / 44);
+    }
   }
 }
 

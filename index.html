@@ -19,7 +19,7 @@
   </head>
   <body>
     <!--Шапка-->
-    <header class="page-header">
+    <!-- <header class="page-header">
       <div class="container item-link">
         <nav class="main-nav">
           <a href="./index.html" class="main-nav__logo"
@@ -108,7 +108,7 @@
           </div>
         </div>
       </div>
-    </header>
+    </header> -->
     <main>
       <!--Банер-->
       <section class="hero-overlay">
@@ -121,7 +121,7 @@
         </div>
       </section>
       <!--Деталі-->
-      <section class="section padding-sec">
+      <!-- <section class="section padding-sec">
         <div class="container">
           <h2 class="visually-hidden">Shadow</h2>
           <ul class="about">
@@ -171,9 +171,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--Заняття-->
-      <section class="section reviews">
+      <!-- <section class="section reviews">
         <div class="container">
           <h2 class="glava">Чим ми займаємося</h2>
           <ul class="images">
@@ -212,19 +212,34 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--Команда-->
       <section class="section glava-job-title">
         <div class="container">
           <h2 class="glava">Наша команда</h2>
           <ul class="badge">
             <li class="badge__card">
-              <img
-                src="./images/nameone.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-                class="badge__photo"
-              />
+              <picture>
+                <source
+                  srcset="./images/desktop/nameone.jpg 1x, ./images/desktop/nameone-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/tablet/nameone-tab.jpg 1x, ./images/tablet/nameone-tab-2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/mobile/nameone-mob.jpg 1x, ./images/mobile/nameone-mob-2x.jpg 2x"
+                  media="(min-width:480px)"
+                />
+                <img
+                  srcset="./images/desktop/nameone.jpg 1x, ./images/desktop/nameone-2x.jpg 2x"
+                  src="./images/desktop/nameone.jpg"
+                  alt="Ігор Дем'яненко"
+                  width="270"
+                  class="badge__photo"
+                />
+              </picture>
               <div class="people">
                 <h3 class="people__name">Ігор Дем'яненко</h3>
                 <p class="people__jobtitle">Product Designer</p>
@@ -257,7 +272,27 @@
               </div>
             </li>
             <li class="badge__card">
-              <img src="./images/nametwo.jpg" alt="Ольга Рєпіна" width="270" class="badge__photo" />
+              <picture>
+                <source
+                  srcset="./images/desktop/nametwo.jpg 1x, ./images/desktop/nametwo-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/tablet/nametwo-tab.jpg 1x, ./images/tablet/nametwo-tab-2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/mobile/nametwo-mob.jpg 1x, ./images/mobile/nametwo-mob-2x.jpg 2x"
+                  media="(min-width:480px)"
+                />
+                <img
+                  srcset="./images/desktop/nametwo.jpg 1x, ./images/desktop/nametwo-2x.jpg 2x"
+                  src="./images/desktop/nametwo.jpg"
+                  alt="Ольга Рєпіна"
+                  width="270"
+                  class="badge__photo"
+                />
+              </picture>
               <div class="people">
                 <h3 class="people__name">Ольга Рєпіна</h3>
                 <p class="people__jobtitle">Frontend Developer</p>
@@ -290,12 +325,33 @@
               </div>
             </li>
             <li class="badge__card">
-              <img
-                src="./images/namethree.jpg"
-                alt="Микола Тарасов"
-                width="270"
-                class="badge__photo"
-              />
+              <picture>
+                <source
+                  srcset="./images/desktop/namethree.jpg 1x, ./images/desktop/namethree-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/namethree-tab.jpg    1x,
+                    ./images/tablet/namethree-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/namethree-mob.jpg    1x,
+                    ./images/mobile/namethree-mob-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  srcset="./images/desktop/namethree.jpg 1x, ./images/desktop/namethree-2x.jpg 2x"
+                  src="./images/desktop/namethree.jpg"
+                  alt="Микола Тарасов"
+                  width="270"
+                  class="badge__photo"
+                />
+              </picture>
               <div class="people">
                 <h3 class="people__name">Микола Тарасов</h3>
                 <p class="people__jobtitle">Marketing</p>
@@ -328,12 +384,33 @@
               </div>
             </li>
             <li class="badge__card">
-              <img
-                src="./images/namefour.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-                class="badge__photo"
-              />
+              <picture>
+                <source
+                  srcset="./images/desktop/namefour.jpg 1x, ./images/desktop/namefour-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/namefour-tab.jpg    1x,
+                    ./images/tablet/namefour-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/namefour-mob.jpg    1x,
+                    ./images/mobile/namefour-mob-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  srcset="./images/desktop/namefour.jpg 1x, ./images/desktop/namefour-2x.jpg 2x"
+                  src="./images/desktop/namefour.jpg"
+                  alt="Михайло Єрмаков"
+                  width="270"
+                  class="badge__photo"
+                />
+              </picture>
               <div class="people">
                 <h3 class="people__name">Михайло Єрмаков</h3>
                 <p class="people__jobtitle">UI Designer</p>
@@ -369,7 +446,7 @@
         </div>
       </section>
       <!-- Клієнти -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="glava">Постійні клієнти</h2>
           <ul class="client">
@@ -411,10 +488,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!--Підвал-->
-    <footer class="drop-info">
+    <!-- <footer class="drop-info">
       <div class="container foot-flex">
         <div class="flogo">
           <a href="./index.html" class="flogo__link">Web<span class="flogo__style">Studio</span></a>
@@ -479,7 +556,7 @@
           </button>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close" data-modal-close>
