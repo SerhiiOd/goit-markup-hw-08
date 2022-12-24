@@ -1,3 +1,9 @@
+.reviews {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .images {
   display: flex;
   margin-right: -30px;
