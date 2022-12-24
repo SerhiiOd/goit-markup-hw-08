@@ -1,7 +1,6 @@
 .title-modal {
   font-weight: 700;
   font-size: 20px;
-  // line-height: calc(23 / 20);
   line-height: calc(30 / 20);
   text-align: center;
   letter-spacing: 0.03em;
@@ -86,8 +85,6 @@ textarea {
   height: 120px;
 
   &::placeholder {
-    // font-size: 12px;
-    // line-height: calc(14 / 12);
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.01em;

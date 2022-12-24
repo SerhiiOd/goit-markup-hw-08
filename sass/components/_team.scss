@@ -3,15 +3,9 @@
 }
 
 .badge {
-  // display: flex;
-  // margin-top: -30px;
-  // margin-right: -30px;
-
   @media screen and (min-width: 1200px) {
     display: flex;
     gap: 30px;
-    // margin-top: -30px;
-    // margin-right: -30px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -21,14 +15,8 @@
   }
 
   & > .badge__card {
-    // flex-basis: calc(100% / 4 - 30px);
-    // margin-top: var(--margin-content);
-    // margin-right: var(--margin-content);
-
     @media screen and (min-width: 1200px) {
-      flex-basis: calc((100% - 30px) / 4 );
-      // margin-top: var(--margin-content);
-      // margin-right: var(--margin-content);
+      flex-basis: calc((100% - 30px) / 4);
     }
 
     @media screen and (min-width: 768px) {
@@ -69,7 +57,6 @@
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
   margin-right: auto;
-  // margin-bottom: 10px;
   margin-bottom: 16px;
   margin-left: auto;
 }
