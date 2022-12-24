@@ -7,33 +7,34 @@
   background-color: #c4c4c4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../../images/mobile/overlay-mob.jpg');
-  @include retina {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../images/mobile/overlay-mob-2x.jpg');
-  }
-  // background-position: center;
+  background-position: center;
   background-size: cover;
 
-  @media screen and (min-width: 768px) {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../images/tablet/overlay-tab.jpg');
+  //   @include retina {
+  //   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  //     url('../../images/mobile/overlay-mob-2x.jpg');
+  // }
 
-    @include retina {
-      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../../images/tablet/overlay-tab-2x.jpg');
-    }
-  }
+  // @media screen and (min-width: 768px) {
+  //   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  //     url('../../images/tablet/overlay-tab.jpg');
 
-  @media screen and (min-width: 1200px) {
-    padding: 200px 0;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../images/desktop/overlay.jpg');
+  //   @include retina {
+  //     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  //       url('../../images/tablet/overlay-tab-2x.jpg');
+  //   }
+  // }
 
-    @include retina {
-      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../../images/desktop/overlay-2x.jpg');
-    }
-  }
+  // @media screen and (min-width: 1200px) {
+  //   padding: 200px 0;
+  //   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  //     url('../../images/desktop/overlay.jpg');
+
+  //   @include retina {
+  //     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  //       url('../../images/desktop/overlay-2x.jpg');
+  //   }
+  // }
 }
 
 .hero-overlay__text {
