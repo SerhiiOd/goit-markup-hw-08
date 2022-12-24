@@ -21,14 +21,25 @@
   font-family: 'Raleway', sans-serif;
   color: var(--color-text-logo);
   font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
+  // font-size: 26px;
+  // line-height: calc(31 / 26);
+  font-size: 24px;
+  line-height: calc(28 / 24);
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: calc(31 / 26);
+  }
 
   .main-nav__styles {
     color: var(--text-color-logo);
-    line-height: calc(31 / 26);
+    // line-height: calc(31 / 26);
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+      line-height: calc(31 / 26);
+    }
   }
 }
 
