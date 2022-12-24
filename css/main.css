@@ -149,10 +149,6 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.padding-sec {
-  padding-bottom: 0;
-}
-
 @media screen and (min-width: 768px) {
   .about {
     display: flex;
@@ -988,6 +984,18 @@ textarea {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .padding-sec {
+    padding-bottom: 0;
+  }
 }
 
 .container {
