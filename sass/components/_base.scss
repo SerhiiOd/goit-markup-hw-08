@@ -43,9 +43,11 @@ textarea {
   resize: none;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 /* Розмітка */
-
-
 
 .section {
   @media screen and (min-width: 1200px) {
